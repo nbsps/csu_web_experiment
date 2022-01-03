@@ -1,0 +1,85 @@
+:root {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/success_bg.jpg);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2e86de;
+  border-bottom: 2px solid #222f3e;
+  h2 {
+    padding: 0 5vw;
+  }
+}
+main {
+  margin: 20px auto;
+  width: 70vw;
+  min-width: 330px;
+  height: 80vh;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px #000;
+  background-color: #00d2d3;
+  display: flex;
+  .pass-change,
+  .bind-mail {
+    margin: 20px auto;
+    width: 60%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    label {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      .get-code {
+        width: 60px;
+        height: 30px;
+      }
+    }
+    label[for="code"] {
+      margin-top: -29px;
+    }
+    input {
+      outline: none;
+      border: 1px solid #000;
+      border-radius: 5px;
+      height: 40px;
+      width: 80%;
+      min-width: 240px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    #captcha {
+      // width: calc(80% - 170px);
+      // box-sizing: border-box;
+      // width: calc(80% + 2px);
+      // padding-right: 70px;
+    }
+    img {
+      position: relative;
+      top: -39px;
+      right: calc(-80% + 70px);
+      width: 70px;
+    }
+    .submit {
+      margin-top: 40px;
+      height: 40px;
+      width: 80px;
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+    }
+  }
+}

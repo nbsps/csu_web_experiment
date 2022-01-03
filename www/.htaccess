@@ -1,0 +1,13 @@
+Redirect /controller/controller.php /index.php
+Redirect /model/model.php /index.php
+Redirect /utils/EmailSender.php /index.php
+Redirect /utils/res.php /index.php
+Redirect /utils/sql.php /index.php
+Redirect /.htaccess /index.php
+
+RewriteEngine On
+RewriteBase /  
+RewriteCond %{HTTP_REFERER} (web.nbsps.top) [NC]  
+RewriteRule .(less|map|svg|js|css|png|wasm)$ /index\.php [R=302,L]
+RewriteCond %{HTTP_USER_AGENT} (python|java|nodejs|php) [NC]  
+RewriteRule .(less|map|svg|js|css|png|wasm)$ /index\.php [R=302,L] 
